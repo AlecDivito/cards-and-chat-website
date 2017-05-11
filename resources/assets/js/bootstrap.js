@@ -16,7 +16,7 @@ Vue.use(VueRouter);
 // Global laravel-echo
 window.Echo = new Echo({
     broadcaster: 'socket.io',
-    host: 'http://cardgames.local:6001',
+    host: 'http://'+ window.location.hostname +':6001',
     auth: {
         headers: {
             Authorization: 'Bearer ' + window.Laravel.csrfToken

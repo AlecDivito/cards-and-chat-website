@@ -24,7 +24,7 @@
         <div id="app">
 
         </div>
-        <script src="//cardgames.local:6001/socket.io/socket.io.js"></script>
+        <script src="//cardsandchat.local:6001/socket.io/socket.io.js"></script>
         <script src="/js/app.js"></script>
     </body>
 </html>

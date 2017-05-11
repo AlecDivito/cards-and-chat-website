@@ -1,5 +1,5 @@
 {
-	"authHost": "http://cardgames.local",
+	"authHost": "http://cardsandchat.local",
 	"authEndpoint": "/broadcasting/auth",
 	"clients": [
 		{
@@ -22,7 +22,7 @@
 		}
 	},
 	"devMode": true,
-	"host": "cardgames.local",
+	"host": "cardsandchat.local",
 	"port": "6001",
 	"protocol": "http",
 	"socketio": {},
