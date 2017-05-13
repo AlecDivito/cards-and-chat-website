@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('weather', 'ChatRoomController@request')->middleware('requestIP');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
