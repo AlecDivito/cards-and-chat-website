@@ -7,7 +7,7 @@ use Closure;
 class getIPAddress
 {
     /**
-     * Handle an incoming request.
+     * Append the attribute 'ip' to the request class
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
@@ -15,6 +15,7 @@ class getIPAddress
      */
     public function handle($request, Closure $next)
     {
+        $request['ip'] = \Request::ip();
         return $next($request);
     }
 }
