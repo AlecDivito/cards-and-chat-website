@@ -23,7 +23,7 @@ abstract class AbstractAPIRepository
 
         if($response->getStatusCode() == '200' OR '201')
         {
-            return $response->getBody()->getContents();
+            return \GuzzleHttp\json_decode($response->getBody()->getContents(), true);
         }
 
         throw new \HttpRequestException($response->getStatusCode() . ' status code returned');
